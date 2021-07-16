@@ -1,0 +1,8 @@
+site: https://watchy.sqfmi.com/
+summary: A fully open source & customizable E-Ink watch
+bom: WatchyBOM.csv
+gerbers: GERBER/
+color: black
+eda:
+  type: kicad
+  pcb: Watchy.kicad_pcb
