@@ -1,7 +1,7 @@
 # watchy-hardware
 Watchy Hardware CAD Files
 
-[**Pre-order Watchy!**](https://www.crowdsupply.com/sqfmi/watchy)
+[**Buy Watchy!**](https://shop.sqfmi.com)
 Now with injection molded or CNC'd aluminum case
 
 [![OSHWA US000936](OSHWA-Certification.svg)](https://certification.oshwa.org/us000936.html)
