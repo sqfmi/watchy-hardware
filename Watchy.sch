@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Watchy"
 Date ""
-Rev "1.5"
+Rev "2.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -416,8 +416,8 @@ L Device:C C11
 U 1 1 5B7A903C
 P 4865 4860
 F 0 "C11" H 4890 4960 50  0000 L CNN
-F 1 "100nF" H 4890 4760 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4903 4710 50  0001 C CNN
+F 1 "4.7uF" H 4890 4760 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4903 4710 50  0001 C CNN
 F 3 "" H 4865 4860 50  0001 C CNN
 	1    4865 4860
 	0    -1   -1   0   
@@ -1056,8 +1056,6 @@ F 3 "" H 9705 6335 50  0001 C CNN
 $EndComp
 NoConn ~ 8305 5035
 NoConn ~ 9705 5035
-Wire Wire Line
-	5515 4560 5715 4560
 Wire Notes Line
 	6970 6530 6970 4365
 Wire Notes Line
@@ -1518,14 +1516,13 @@ NoConn ~ 1350 1290
 NoConn ~ 1350 1390
 NoConn ~ 1350 1490
 NoConn ~ 1350 1590
-NoConn ~ 2950 3490
 Text GLabel 2950 1690 2    60   Input ~ 0
 BTN_4
 Text GLabel 2950 2290 2    50   Input ~ 0
 ACC_INT_1
 Text GLabel 2950 2090 2    50   Input ~ 0
 ACC_INT_2
-Text GLabel 2950 3290 2    60   Input ~ 0
+Text GLabel 2950 3590 2    60   Input ~ 0
 BTN_3
 Text GLabel 2950 3190 2    50   Input ~ 0
 RTC_INT
@@ -1533,7 +1530,7 @@ Text GLabel 2950 3090 2    60   Input ~ 0
 BTN_1
 Text GLabel 2950 2990 2    60   Input ~ 0
 BTN_2
-Text GLabel 2950 3590 2    60   Input ~ 0
+Text GLabel 2950 3490 2    60   Input ~ 0
 ADC
 $Comp
 L Device:R R7
@@ -1887,4 +1884,60 @@ $EndComp
 Wire Wire Line
 	2960 7120 2700 7120
 Connection ~ 2700 7120
+$Comp
+L Device:C C13
+U 1 1 61C6C07A
+P 4260 4560
+F 0 "C13" H 4285 4660 50  0000 L CNN
+F 1 "4.7uF" H 4285 4460 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4298 4410 50  0001 C CNN
+F 3 "" H 4260 4560 50  0001 C CNN
+	1    4260 4560
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4810 4410 4810 4560
+Wire Wire Line
+	4810 4560 5515 4560
+Connection ~ 5515 4560
+Wire Wire Line
+	5515 4560 5715 4560
+$Comp
+L power:GND #PWR0101
+U 1 1 61C70501
+P 4260 4710
+F 0 "#PWR0101" H 4260 4460 50  0001 C CNN
+F 1 "GND" H 4390 4660 50  0000 C CNN
+F 2 "" H 4260 4710 50  0001 C CNN
+F 3 "" H 4260 4710 50  0001 C CNN
+	1    4260 4710
+	1    0    0    -1  
+$EndComp
+Text GLabel 10400 1960 0    50   Input ~ 0
+RES
+$Comp
+L Device:R R20
+U 1 1 61C72728
+P 10400 1810
+F 0 "R20" V 10480 1810 50  0000 C CNN
+F 1 "100K" V 10400 1810 50  0000 C CNN
+F 2 "Watchy:R_0402" V 10330 1810 50  0001 C CNN
+F 3 "" H 10400 1810 50  0001 C CNN
+	1    10400 1810
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 61C7317C
+P 10400 1660
+F 0 "#PWR0108" H 10400 1510 50  0001 C CNN
+F 1 "+3.3V" H 10265 1780 50  0000 C CNN
+F 2 "" H 10400 1660 50  0001 C CNN
+F 3 "" H 10400 1660 50  0001 C CNN
+	1    10400 1660
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2950 3290
+Wire Wire Line
+	4260 4410 4810 4410
 $EndSCHEMATC
