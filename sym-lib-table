@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Watchy)(type Legacy)(uri ${KIPRJMOD}/Watchy.lib)(options "")(descr ""))
-)
