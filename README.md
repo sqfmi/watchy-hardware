@@ -6,6 +6,4 @@
 
 [**Watchy Case & Accessories**](https://shop.sqfmi.com)
 
-Visit [**https://watchy.sqfmi.com**](https://watchy.sqfmi.com) for documentation, hardware design files, and more!
-
-[![OSHWA US000936](OSHWA-Certification.svg)](https://certification.oshwa.org/us000936.html)
+Visit [**https://watchy.sqfmi.com**](https://watchy.sqfmi.com) to get started!
