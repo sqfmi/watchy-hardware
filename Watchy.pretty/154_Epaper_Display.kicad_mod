@@ -1,0 +1,15 @@
+(module 154_Epaper_Display (layer F.Cu) (tedit 5F3ADF8F)
+  (attr virtual)
+  (fp_text reference REF** (at -7.12 -6.81) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "1.54 E-Paper Display" (at -7.12 -7.81) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_poly (pts (xy 15.94 18.25) (xy -15.86 18.25) (xy -15.86 -19.07) (xy 15.94 -19.07)) (layer F.Fab) (width 0.1))
+  (model "${KIPRJMOD}/3D/Waveshare 1.54 E ink - Display Flush Folded.stp"
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 -90))
+  )
+)
